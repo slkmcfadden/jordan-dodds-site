@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; frame-src https://jordandodds.glossgenius.com">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Jordan Dodds — Hair Extension Specialist in Los Angeles. Luxury extensions, color, cuts and styling on Sunset Blvd.">
+  <title>Jordan Dodds — Hair Extension Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="home">
+    <div class="brand">
+      <a href="index.html" class="brand-name"><img src="img/jd_wordmark.png" alt="JORDAN DODDS"></a>
+      <span class="brand-sub">HAIR EXTENSION SPECIALIST</span>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#about">ABOUT</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer" class="nav-book js-book">BOOK</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-photo photo photo--true">
+        <img src="img/hero_v4.jpg" alt="Model with long dark brunette waves" loading="eager">
+      </div>
+      <div class="hero-copy">        <h1 class="hero-title"><img src="img/book_now.png" alt="BOOK NOW"></h1>
+        <a class="btn-outline js-book" href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer">BOOK YOUR APPOINTMENT</a>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery" aria-label="Gallery of services">
+      <div class="gallery-grid">
+        <a href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer" class="tile photo photo--true js-book">
+          <img src="img/jordan_dodds_extensions_color.jpg" alt="Long blonde wavy hair extensions, back view" loading="lazy">
+          <span class="tile-label">EXTENSIONS</span>
+        </a>
+        <a href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer" class="tile photo photo--true js-book">
+          <img src="img/color_v2.jpg" alt="Model with dimensional balayage color, side profile" loading="lazy">
+          <span class="tile-label">COLOR</span>
+        </a>
+        <a href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer" class="tile photo photo--true js-book">
+          <img src="img/jordan_dodds_cut_color.jpg" alt="Long dark layered haircut, back view" loading="lazy">
+          <span class="tile-label">CUT</span>
+        </a>
+        <a href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer" class="tile photo photo--true js-book">
+          <img src="img/style_v4.jpg" alt="Blonde blowout with soft curled ends" loading="lazy">
+          <span class="tile-label">STYLE</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 class="section-title">SERVICES</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h3>EXTENSIONS</h3>
+          <p>Hand-tied, tape-in and keratin luxury extensions, color-matched and cut to blend seamlessly. Consultation included.</p>
+        </div>
+        <div class="service">
+          <h3>COLOR</h3>
+          <p>Dimensional blonding, balayage, gloss and corrective color designed around your skin tone and lifestyle.</p>
+        </div>
+        <div class="service">
+          <h3>CUT</h3>
+          <p>Precision dry and wet cutting for length, shape and movement — tailored to your hair, not a trend.</p>
+        </div>
+        <div class="service">
+          <h3>STYLE</h3>
+          <p>Event styling, editorial waves and updos. Camera-ready finishes for weddings, shoots and nights out.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="section-title">ABOUT</h2>
+      <p class="about-copy">
+        Jordan Dodds is a Los Angeles hair extension specialist on Sunset Blvd.
+        With over a decade behind the chair, Jordan builds luxury hair that looks
+        and moves like it grew from your head — because confidence should never
+        feel like a compromise.
+      </p>
+      <a class="btn-outline js-book" href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer">BOOK YOUR APPOINTMENT</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-col footer-left">
+      <p>7803 SUNSET BLVD</p>
+      <p>LOS ANGELES, CA</p>
+    </div>
+    <div class="footer-col footer-center">
+      <a href="index.html" class="monogram" aria-label="Jordan Dodds home"><img src="img/jd_logo.png" alt="Jordan Dodds JD monogram"></a>
+    </div>
+    <div class="footer-col footer-right">
+      <p><a href="tel:+13109229646">310.922.9646</a></p>
+      <p><a href="https://www.instagram.com/jordandoddssalon" target="_blank" rel="noopener noreferrer">@JORDANDODDSSALON</a></p>
+    </div>
+  </footer>
+
+<div class="book-modal" id="bookModal" hidden role="dialog" aria-modal="true" aria-label="Book an appointment">
+  <div class="book-modal-panel">
+    <button class="book-modal-close" type="button" aria-label="Close booking">&#215;</button>
+    <iframe id="bookFrame" title="GlossGenius booking" referrerpolicy="no-referrer"></iframe>
+    <div class="book-fallback" id="bookFallback" hidden>
+      <p>SECURE BOOKING OPENS IN A NEW WINDOW</p>
+      <a class="btn-outline" href="https://jordandodds.glossgenius.com/" target="_blank" rel="noopener noreferrer">OPEN BOOKING</a>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
